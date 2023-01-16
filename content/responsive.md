@@ -3,6 +3,7 @@ title: Responsive
 description: Fonctionnalités responsive du composant c-pos
 layout: libdoc/page-split
 order: 100
+separator: true
 ---
 Si le paramètre `responsive: true` est activé, les modifieurs du composant c-pos sont adaptables à chaque design token de taille d'écran `$briks-screen-sizes` comme suit.
 
