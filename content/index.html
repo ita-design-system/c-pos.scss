@@ -1,0 +1,200 @@
+---
+layout: libdoc/page-codemirror
+permalink: index.html
+unlisted: true
+---
+<h2>Ancre principale</h2>
+<p>Seules les propriétés top et left sont utilisées. Le haut gauche de l'élément est considéré comme l'ancre principale de l'élément.</p>
+<input type="radio" name="trbl" id="trbl-top-left" checked>
+<label for="trbl-top-left">m-top-left</label>
+<input type="radio" name="trbl" id="trbl-top-center">
+<label for="trbl-top-center">m-top-center</label>
+<input type="radio" name="trbl" id="trbl-top-right">
+<label for="trbl-top-right">m-top-right</label>
+<div></div>
+<input type="radio" name="trbl" id="trbl-middle-left">
+<label for="trbl-middle-left">m-middle-left</label>
+<input type="radio" name="trbl" id="trbl-middle-center">
+<label for="trbl-middle-center">m-middle-center</label>
+<input type="radio" name="trbl" id="trbl-middle-right">
+<label for="trbl-middle-right">m-middle-right</label>
+<div></div>
+<input type="radio" name="trbl" id="trbl-bottom-left">
+<label for="trbl-bottom-left">m-bottom-left</label>
+<input type="radio" name="trbl" id="trbl-bottom-center">
+<label for="trbl-bottom-center">m-bottom-center</label>
+<input type="radio" name="trbl" id="trbl-bottom-right">
+<label for="trbl-bottom-right">m-bottom-right</label>
+<h2>Ancres avec transform</h2>
+<p>On vient positionner l'ancre spécifiée de l'élément sur l'ancre principale.</p>
+<input type="radio" name="anchor" id="anchor-top-left" checked>
+<label for="anchor-top-left">m-anchor-top-left</label>
+<input type="radio" name="anchor" id="anchor-top-center">
+<label for="anchor-top-center">m-anchor-top-center</label>
+<input type="radio" name="anchor" id="anchor-top-right">
+<label for="anchor-top-right">m-anchor-top-right</label>
+<div></div>
+<input type="radio" name="anchor" id="anchor-middle-left">
+<label for="anchor-middle-left">m-anchor-middle-left</label>
+<input type="radio" name="anchor" id="anchor-middle-center">
+<label for="anchor-middle-center">m-anchor-middle-center</label>
+<input type="radio" name="anchor" id="anchor-middle-right">
+<label for="anchor-middle-right">m-anchor-middle-right</label>
+<div></div>
+<input type="radio" name="anchor" id="anchor-bottom-left">
+<label for="anchor-bottom-left">m-anchor-bottom-left</label>
+<input type="radio" name="anchor" id="anchor-bottom-center">
+<label for="anchor-bottom-center">m-anchor-bottom-center</label>
+<input type="radio" name="anchor" id="anchor-bottom-right">
+<label for="anchor-bottom-right">m-anchor-bottom-right</label>
+<h2>Exemple</h2>
+<div id="conteneur">
+    <div id="element">
+        <div class="c-pos m-absolute m-top-left m-anchor-middle-center anchor"></div>
+        <div class="c-pos m-absolute m-top-center m-anchor-middle-center anchor"></div>
+        <div class="c-pos m-absolute m-top-right m-anchor-middle-center anchor"></div>
+        <div class="c-pos m-absolute m-middle-left m-anchor-middle-center anchor"></div>
+        <div class="c-pos m-absolute m-middle-center m-anchor-middle-center anchor"></div>
+        <div class="c-pos m-absolute m-middle-right m-anchor-middle-center anchor"></div>
+        <div class="c-pos m-absolute m-bottom-left m-anchor-middle-center anchor"></div>
+        <div class="c-pos m-absolute m-bottom-center m-anchor-middle-center anchor"></div>
+        <div class="c-pos m-absolute m-bottom-right m-anchor-middle-center anchor"></div>
+    </div>
+    <div class="c-pos m-absolute m-top-left m-anchor-middle-center anchor"></div>
+    <div class="c-pos m-absolute m-top-center m-anchor-middle-center anchor"></div>
+    <div class="c-pos m-absolute m-top-right m-anchor-middle-center anchor"></div>
+    <div class="c-pos m-absolute m-middle-left m-anchor-middle-center anchor"></div>
+    <div class="c-pos m-absolute m-middle-center m-anchor-middle-center anchor"></div>
+    <div class="c-pos m-absolute m-middle-right m-anchor-middle-center anchor"></div>
+    <div class="c-pos m-absolute m-bottom-left m-anchor-middle-center anchor"></div>
+    <div class="c-pos m-absolute m-bottom-center m-anchor-middle-center anchor"></div>
+    <div class="c-pos m-absolute m-bottom-right m-anchor-middle-center anchor"></div>
+</div>
+<!-- DEMO UNIQUEMENT -->
+<style>
+    body {
+        padding: var(--ita-spacing-4);
+        background-color: var(--ita-color-primary-900);
+        color: var(--ita-color-primary-200);
+        font-family: var(--ita-font-family-mono);
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-bottom: 50vh;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+    }
+    label {
+        display: inline-flex;
+        width: 30%;
+        padding: var(--ita-spacing-1);
+        font-size: var(--ita-font-size-3);
+        border-top: var(--ita-border-4);
+        gap: 1em;
+    }
+    label::before {
+        content: "[ ]";
+        white-space: nowrap;
+    }
+    input:checked + label::before {
+        content: "[x]";
+    }
+    #conteneur {
+        background-color: var(--ita-color-primary-800);
+        height: 30vh;
+        margin: auto;
+        width: calc(100% - 200px);
+        border: 1px dashed var(--ita-color-primary-500);
+        position: relative;
+    }
+    #element {
+        position: absolute;
+        background-color: var(--ita-color-support-success-500);
+        color: var(--ita-color-primary-900);
+        padding: var(--ita-spacing-6);
+        opacity: 0.5;
+    }
+    .anchor {
+        width: 12px;
+        height: 12px;
+        background-color: fuchsia;
+        border-radius: 100%;
+    }
+    #conteneur::before,
+    #element::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 100%;
+        border-top: 1px dashed var(--ita-color-primary-500);
+    }
+    #conteneur::after,
+    #element::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        height: 100%;
+        border-left: 1px dashed var(--ita-color-primary-500);
+    }
+    #trbl-top-center:checked ~ #conteneur > #element {
+        top: 0%;
+        left: 50%;
+    }
+    #trbl-top-right:checked ~ #conteneur > #element {
+        top: 0%;
+        left: 100%;
+    }
+    #trbl-middle-left:checked ~ #conteneur > #element {
+        top: 50%;
+        left: 0%;
+    }
+    #trbl-middle-center:checked ~ #conteneur > #element {
+        top: 50%;
+        left: 50%;
+    }
+    #trbl-middle-right:checked ~ #conteneur > #element {
+        top: 50%;
+        left: 100%;
+    }
+    #trbl-bottom-left:checked ~ #conteneur > #element {
+        top: 100%;
+        left: 0%;
+    }
+    #trbl-bottom-center:checked ~ #conteneur > #element {
+        top: 100%;
+        left: 50%;
+    }
+    #trbl-bottom-right:checked ~ #conteneur > #element {
+        top: 100%;
+        left: 100%;
+    }
+    #anchor-top-center:checked ~ #conteneur > #element {
+        transform: translateX(-50%) translateY(0%)
+    }
+    #anchor-top-right:checked ~ #conteneur > #element {
+        transform: translateX(-100%) translateY(0%)
+    }
+    #anchor-middle-left:checked ~ #conteneur > #element {
+        transform: translateX(0%) translateY(-50%)
+    }
+    #anchor-middle-center:checked ~ #conteneur > #element {
+        transform: translateX(-50%) translateY(-50%)
+    }
+    #anchor-middle-right:checked ~ #conteneur > #element {
+        transform: translateX(-100%) translateY(-50%)
+    }
+    #anchor-bottom-left:checked ~ #conteneur > #element {
+        transform: translateX(0%) translateY(-100%)
+    }
+    #anchor-bottom-center:checked ~ #conteneur > #element {
+        transform: translateX(-50%) translateY(-100%)
+    }
+    #anchor-bottom-right:checked ~ #conteneur > #element {
+        transform: translateX(-100%) translateY(-100%)
+    }
+</style>

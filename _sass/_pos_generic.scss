@@ -1,33 +1,3 @@
-# c-pos.scss
-
-[Démo et documentation](https://ita-design-system.github.io/c-pos.scss/)
-
-Composant générique CSS c-pos dédié aux positionnements. 
-
-## Typologie d'un composant générique
-
-```scss
-// SCSS map
-$briks-components-generic: ( 
-    // SCSS map | Nom du composant
-    NOM_DU_COMPOSANT: ( 
-        // Boolean | Composant activé true ou false
-        enabled: true, 
-        // Boolean | Responsive activé true ou false
-        responsive: true, 
-        // SCSS map | Liste des propriétés du composant par défaut
-        defaults: (), 
-        // SCSS map | Liste des modifieurs
-        modifiers: () 
-    )
-);
-```
-
-## Configuration
-
-Organisation et description du fichier de configuration [_sass/_pos_generic.scss](_sass/_pos_generic.scss).
-
-```scss
 /*
     C-POS
     Composant générique CSS ITADS
@@ -41,7 +11,7 @@ $briks-components-generic: (
         enabled: true, 
         // Responsive activé true ou false
         responsive: true, 
-        // Liste des propriétés c-pos par défaut
+        // Liste des propriétés c-flex par défaut
         defaults: (),
         // Rendu: 
         // c-pos {
@@ -223,46 +193,3 @@ $briks-components-generic: (
         )
     )
 );
-``` 
-
-## Extensions
-
-Il est possible d'étendre les fonctionnalités du composant en ajoutant simplement un point d'entrée avec une déclaration `$briks-components-generic` à la typologie identique mais avec des propriétés par défaut et des modifieurs qui surchargent ou ajoutent des propriétés CSS.
-
-Exemple.
-
-```scss
-/*
-    C-POS EXTENSION
-    Extension du composant générique c-pos
-    https://github.com/ita-design-system/c-pos.scss
-    Ce fichier doit servir à étendre ou surcharger les fonctionnalités
-    du composant c-pos selon les besoins du projet
-*/
-$briks-components-generic: (
-    // Nom du composant, obligatoirement pos
-    pos: ( 
-        // Extension activée true ou false
-        enabled: true, 
-        // Responsive activée true ou false pour l'extension
-        responsive: true, 
-        // Valeurs par défaut de l'extension
-        defaults: (),
-        // Liste des modifieurs contenant chacun une liste de propriétés qui 
-        // soit surchargent les propriétés par défaut
-        // soit ajoutent des propriétés
-        // soit les deux
-        modifiers: ( 
-            // Ajout de z-index supplémentaires
-            // c-pos m-z-6
-            z-6: (
-                z-index: 600
-            ),
-            // c-pos m-z-7
-            z-7: (
-                z-index: 700
-            )
-        )
-    )
-);
-```
