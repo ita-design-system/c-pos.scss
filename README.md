@@ -202,8 +202,8 @@ $briks-components-generic: (
             right-1: (
                 right: my-spcaing(1)
             ),
-            // c-pos m-top-2
-            top-2: (
+            // c-pos m-right-2
+            right-2: (
                 right: my-spcaing(2)
             )
             // etc
