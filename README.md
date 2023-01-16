@@ -30,6 +30,7 @@ Organisation et description du fichier de configuration [_sass/_pos_generic.scss
 ```scss
 /*
     C-POS
+    v0.1.0
     Composant générique CSS ITADS
     https://github.com/ita-design-system/c-pos.scss
 */
@@ -41,7 +42,7 @@ $briks-components-generic: (
         enabled: true, 
         // Responsive activé true ou false
         responsive: true, 
-        // Liste des propriétés c-pos par défaut
+        // Liste des propriétés c-flex par défaut
         defaults: (),
         // Rendu: 
         // c-pos {
@@ -66,18 +67,6 @@ $briks-components-generic: (
             // c-pos m-relative
             relative: (
                 position: relative
-            ),
-            // c-pos m-offset-50-50
-            offset-50-50: (
-                transform: translateX(-50%) translateY(-50%)
-            ),
-            // c-pos m-offset-0-50
-            offset-0-50: (
-                transform: translateX(0%) translateY(-50%)
-            ),
-            // c-pos m-offset-50-0
-            offset-50-0: (
-                transform: translateX(50%) translateY(0%)
             ),
             // c-pos m-top-0
             top-0: (
@@ -127,41 +116,17 @@ $briks-components-generic: (
             left-100: (
                 left: 100%
             ),
-            // c-pos m-anchor-top-left
-            anchor-top-left: (
-                transform: translateX(0%) translateY(0%)
-            ),
-            // c-pos m-anchor-top-center
-            anchor-top-center: (
-                transform: translateX(-50%) translateY(0%)
-            ),
-            // c-pos m-anchor-top-right
-            anchor-top-right: (
-                transform: translateX(-100%) translateY(0%)
-            ),
-            // c-pos m-anchor-middle-left
-            anchor-middle-left: (
-                transform: translateX(0%) translateY(-50%)
-            ),
-            // c-pos m-anchor-middle-center
-            anchor-middle-center: (
+            // c-pos m-offset-50-50
+            offset-50-50: (
                 transform: translateX(-50%) translateY(-50%)
             ),
-            // c-pos m-anchor-middle-right
-            anchor-middle-right: (
-                transform: translateX(-100%) translateY(-50%)
+            // c-pos m-offset-0-50
+            offset-0-50: (
+                transform: translateX(0%) translateY(-50%)
             ),
-            // c-pos m-anchor-bottom-left
-            anchor-bottom-left: (
-                transform: translateX(0%) translateY(-100%)
-            ),
-            // c-pos m-anchor-bottom-center
-            anchor-bottom-center: (
-                transform: translateX(-50%) translateY(-100%)
-            ),
-            // c-pos m-anchor-bottom-right
-            anchor-bottom-right: (
-                transform: translateX(-100%) translateY(-100%)
+            // c-pos m-offset-50-0
+            offset-50-0: (
+                transform: translateX(50%) translateY(0%)
             ),
             // c-pos m-z--1
             z--1: (
