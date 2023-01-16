@@ -67,50 +67,17 @@ $briks-components-generic: (
             relative: (
                 position: relative
             ),
-            // c-pos m-top-left
-            top-left: (
-                top: 0%,
-                left: 0%
+            // c-pos m-offset-50-50
+            offset-50-50: (
+                transform: translateX(-50%) translateY(-50%)
             ),
-            // c-pos m-top-center
-            top-center: (
-                top: 0%,
-                left: 50%
+            // c-pos m-offset-0-50
+            offset-0-50: (
+                transform: translateX(0%) translateY(-50%)
             ),
-            // c-pos m-top-right
-            top-right: (
-                top: 0%,
-                left: 100%
-            ),
-            // c-pos m-middle-left
-            middle-left: (
-                top: 50%,
-                left: 0%
-            ),
-            // c-pos m-middle-center
-            middle-center: (
-                top: 50%,
-                left: 50%
-            ),
-            // c-pos m-middle-right
-            middle-right: (
-                top: 50%,
-                left: 100%
-            ),
-            // c-pos m-bottom-left
-            bottom-left: (
-                top: 100%,
-                left: 0%
-            ),
-            // c-pos m-bottom-center
-            bottom-center: (
-                top: 100%,
-                left: 50%
-            ),
-            // c-pos m-bottom-right
-            bottom-right: (
-                top: 100%,
-                left: 100%
+            // c-pos m-offset-50-0
+            offset-50-0: (
+                transform: translateX(50%) translateY(0%)
             ),
             // c-pos m-top-0
             top-0: (
@@ -219,6 +186,10 @@ $briks-components-generic: (
             // c-pos m-z-5
             z-5: (
                 z-index: 500
+            ),
+            // c-pos m-z-6
+            z-6: (
+                z-index: 600
             )
         )
     )
@@ -253,15 +224,24 @@ $briks-components-generic: (
         // soit ajoutent des propriétés
         // soit les deux
         modifiers: ( 
-            // Ajout de z-index supplémentaires
-            // c-pos m-z-6
-            z-6: (
-                z-index: 600
+            // Ajout de valeurs de propriétés liées aux design tokens d'espacements
+            // c-pos m-top-1
+            top-1: (
+                top: my-spcaing(1)
             ),
-            // c-pos m-z-7
-            z-7: (
-                z-index: 700
+            // c-pos m-top-2
+            top-2: (
+                top: my-spcaing(2)
+            ),
+            // c-pos m-top-1
+            right-1: (
+                right: my-spcaing(1)
+            ),
+            // c-pos m-top-2
+            top-2: (
+                right: my-spcaing(2)
             )
+            // etc
         )
     )
 );

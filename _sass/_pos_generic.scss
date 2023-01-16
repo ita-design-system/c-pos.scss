@@ -37,51 +37,6 @@ $briks-components-generic: (
             relative: (
                 position: relative
             ),
-            // c-pos m-top-left
-            top-left: (
-                top: 0%,
-                left: 0%
-            ),
-            // c-pos m-top-center
-            top-center: (
-                top: 0%,
-                left: 50%
-            ),
-            // c-pos m-top-right
-            top-right: (
-                top: 0%,
-                left: 100%
-            ),
-            // c-pos m-middle-left
-            middle-left: (
-                top: 50%,
-                left: 0%
-            ),
-            // c-pos m-middle-center
-            middle-center: (
-                top: 50%,
-                left: 50%
-            ),
-            // c-pos m-middle-right
-            middle-right: (
-                top: 50%,
-                left: 100%
-            ),
-            // c-pos m-bottom-left
-            bottom-left: (
-                top: 100%,
-                left: 0%
-            ),
-            // c-pos m-bottom-center
-            bottom-center: (
-                top: 100%,
-                left: 50%
-            ),
-            // c-pos m-bottom-right
-            bottom-right: (
-                top: 100%,
-                left: 100%
-            ),
             // c-pos m-top-0
             top-0: (
                 top: 0%
@@ -130,41 +85,17 @@ $briks-components-generic: (
             left-100: (
                 left: 100%
             ),
-            // c-pos m-anchor-top-left
-            anchor-top-left: (
-                transform: translateX(0%) translateY(0%)
-            ),
-            // c-pos m-anchor-top-center
-            anchor-top-center: (
-                transform: translateX(-50%) translateY(0%)
-            ),
-            // c-pos m-anchor-top-right
-            anchor-top-right: (
-                transform: translateX(-100%) translateY(0%)
-            ),
-            // c-pos m-anchor-middle-left
-            anchor-middle-left: (
-                transform: translateX(0%) translateY(-50%)
-            ),
-            // c-pos m-anchor-middle-center
-            anchor-middle-center: (
+            // c-pos m-offset-50-50
+            offset-50-50: (
                 transform: translateX(-50%) translateY(-50%)
             ),
-            // c-pos m-anchor-middle-right
-            anchor-middle-right: (
-                transform: translateX(-100%) translateY(-50%)
+            // c-pos m-offset-0-50
+            offset-0-50: (
+                transform: translateX(0%) translateY(-50%)
             ),
-            // c-pos m-anchor-bottom-left
-            anchor-bottom-left: (
-                transform: translateX(0%) translateY(-100%)
-            ),
-            // c-pos m-anchor-bottom-center
-            anchor-bottom-center: (
-                transform: translateX(-50%) translateY(-100%)
-            ),
-            // c-pos m-anchor-bottom-right
-            anchor-bottom-right: (
-                transform: translateX(-100%) translateY(-100%)
+            // c-pos m-offset-50-0
+            offset-50-0: (
+                transform: translateX(50%) translateY(0%)
             ),
             // c-pos m-z--1
             z--1: (
@@ -189,6 +120,10 @@ $briks-components-generic: (
             // c-pos m-z-5
             z-5: (
                 z-index: 500
+            ),
+            // c-pos m-z-6
+            z-6: (
+                z-index: 600
             )
         )
     )

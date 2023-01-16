@@ -3,72 +3,65 @@ layout: libdoc/page-codemirror
 permalink: index.html
 unlisted: true
 ---
-<h2>Ancre principale</h2>
-<p>Seules les propriétés top et left sont utilisées. Le haut gauche de l'élément est considéré comme l'ancre principale de l'élément.</p>
-<input type="radio" name="trbl" id="trbl-top-left" checked>
-<label for="trbl-top-left">m-top-left</label>
-<input type="radio" name="trbl" id="trbl-top-center">
-<label for="trbl-top-center">m-top-center</label>
-<input type="radio" name="trbl" id="trbl-top-right">
-<label for="trbl-top-right">m-top-right</label>
+<h2>Ancres principales</h2>
+<p>Les propriétés CSS top, right, bottom et left disposent chacunes des valeurs 0%, 50% et 100%.</p>
+<input type="radio" name="lr" id="trbl-left-0" checked>
+<label for="trbl-left-0">m-left-0<br>left: 0%</label>
+<input type="radio" name="lr" id="trbl-right-100">
+<label for="trbl-right-100">m-right-100<br>right: 100%</label>
+<input type="radio" name="lr" id="trbl-left-50">
+<label for="trbl-left-50">m-left-50<br>left: 50%</label>
+<input type="radio" name="lr" id="trbl-right-50">
+<label for="trbl-right-50">m-right-50<br>right: 50%</label>
+<input type="radio" name="lr" id="trbl-left-100">
+<label for="trbl-left-100">m-left-100<br>left: 100%</label>
+<input type="radio" name="lr" id="trbl-right-0">
+<label for="trbl-right-0">m-right-0<br>right: 0%</label>
 <div></div>
-<input type="radio" name="trbl" id="trbl-middle-left">
-<label for="trbl-middle-left">m-middle-left</label>
-<input type="radio" name="trbl" id="trbl-middle-center">
-<label for="trbl-middle-center">m-middle-center</label>
-<input type="radio" name="trbl" id="trbl-middle-right">
-<label for="trbl-middle-right">m-middle-right</label>
-<div></div>
-<input type="radio" name="trbl" id="trbl-bottom-left">
-<label for="trbl-bottom-left">m-bottom-left</label>
-<input type="radio" name="trbl" id="trbl-bottom-center">
-<label for="trbl-bottom-center">m-bottom-center</label>
-<input type="radio" name="trbl" id="trbl-bottom-right">
-<label for="trbl-bottom-right">m-bottom-right</label>
-<h2>Ancres avec transform</h2>
-<p>On vient positionner l'ancre spécifiée de l'élément sur l'ancre principale.</p>
-<input type="radio" name="anchor" id="anchor-top-left" checked>
-<label for="anchor-top-left">m-anchor-top-left</label>
-<input type="radio" name="anchor" id="anchor-top-center">
-<label for="anchor-top-center">m-anchor-top-center</label>
-<input type="radio" name="anchor" id="anchor-top-right">
-<label for="anchor-top-right">m-anchor-top-right</label>
-<div></div>
-<input type="radio" name="anchor" id="anchor-middle-left">
-<label for="anchor-middle-left">m-anchor-middle-left</label>
-<input type="radio" name="anchor" id="anchor-middle-center">
-<label for="anchor-middle-center">m-anchor-middle-center</label>
-<input type="radio" name="anchor" id="anchor-middle-right">
-<label for="anchor-middle-right">m-anchor-middle-right</label>
-<div></div>
-<input type="radio" name="anchor" id="anchor-bottom-left">
-<label for="anchor-bottom-left">m-anchor-bottom-left</label>
-<input type="radio" name="anchor" id="anchor-bottom-center">
-<label for="anchor-bottom-center">m-anchor-bottom-center</label>
-<input type="radio" name="anchor" id="anchor-bottom-right">
-<label for="anchor-bottom-right">m-anchor-bottom-right</label>
+<input type="radio" name="tb" id="trbl-top-0" checked>
+<label for="trbl-top-0">m-top-0<br>top: 0%</label>
+<input type="radio" name="tb" id="trbl-bottom-100">
+<label for="trbl-bottom-100">m-bottom-100<br>bottom: 100%</label>
+<input type="radio" name="tb" id="trbl-top-50">
+<label for="trbl-top-50">m-top-50<br>top: 50%</label>
+<input type="radio" name="tb" id="trbl-bottom-50">
+<label for="trbl-bottom-50">m-bottom-50<br>bottom: 50%</label>
+<input type="radio" name="tb" id="trbl-top-100">
+<label for="trbl-top-100">m-top-100<br>top: 100%</label>
+<input type="radio" name="tb" id="trbl-bottom-0">
+<label for="trbl-bottom-0">m-bottom-0<br>bottom: 0%</label>
+<h2>Décalages</h2>
+<p>Décalages X et Y de 50% avec la propriété transform pour affiner le positionnement.</p>
+<input type="radio" name="offset" id="offset-0" checked>
+<label for="offset-0">Aucun</label>
+<input type="radio" name="offset" id="offset-50-50">
+<label for="offset-50-50">m-offset-50-50<br>transform: translateX(-50%) translateY(-50%)</label>
+<input type="radio" name="offset" id="offset-0-50">
+<label for="offset-0-50">m-offset-0-50<br>transform: translateX(0%) translateY(-50%)</label>
+<input type="radio" name="offset" id="offset-50-0">
+<label for="offset-50-0">m-offset-50-0<br>transform: translateX(-50%) translateY(0%)</label>
 <h2>Exemple</h2>
 <div id="conteneur">
     <div id="element">
-        <div class="c-pos m-absolute m-top-left m-anchor-middle-center anchor"></div>
-        <div class="c-pos m-absolute m-top-center m-anchor-middle-center anchor"></div>
-        <div class="c-pos m-absolute m-top-right m-anchor-middle-center anchor"></div>
-        <div class="c-pos m-absolute m-middle-left m-anchor-middle-center anchor"></div>
-        <div class="c-pos m-absolute m-middle-center m-anchor-middle-center anchor"></div>
-        <div class="c-pos m-absolute m-middle-right m-anchor-middle-center anchor"></div>
-        <div class="c-pos m-absolute m-bottom-left m-anchor-middle-center anchor"></div>
-        <div class="c-pos m-absolute m-bottom-center m-anchor-middle-center anchor"></div>
-        <div class="c-pos m-absolute m-bottom-right m-anchor-middle-center anchor"></div>
+        <div class="c-pos m-absolute m-top-0 m-left-0 m-offset-50-50 anchor"></div>
+        <div class="c-pos m-absolute m-top-0 m-left-50 m-offset-50-50 anchor"></div>
+        <div class="c-pos m-absolute m-top-0 m-left-100 m-offset-50-50 anchor"></div>
+        <div class="c-pos m-absolute m-top-50 m-left-0 m-offset-50-50 anchor"></div>
+        <div class="c-pos m-absolute m-top-50 m-left-50 m-offset-50-50 anchor"></div>
+        <div class="c-pos m-absolute m-top-50 m-left-100 m-offset-50-50 anchor"></div>
+        <div class="c-pos m-absolute m-top-100 m-left-0 m-offset-50-50 anchor"></div>
+        <div class="c-pos m-absolute m-top-100 m-left-50 m-offset-50-50 anchor"></div>
+        <div class="c-pos m-absolute m-top-100 m-left-100 m-offset-50-50 anchor"></div>
     </div>
-    <div class="c-pos m-absolute m-top-left m-anchor-middle-center anchor"></div>
-    <div class="c-pos m-absolute m-top-center m-anchor-middle-center anchor"></div>
-    <div class="c-pos m-absolute m-top-right m-anchor-middle-center anchor"></div>
-    <div class="c-pos m-absolute m-middle-left m-anchor-middle-center anchor"></div>
-    <div class="c-pos m-absolute m-middle-center m-anchor-middle-center anchor"></div>
-    <div class="c-pos m-absolute m-middle-right m-anchor-middle-center anchor"></div>
-    <div class="c-pos m-absolute m-bottom-left m-anchor-middle-center anchor"></div>
-    <div class="c-pos m-absolute m-bottom-center m-anchor-middle-center anchor"></div>
-    <div class="c-pos m-absolute m-bottom-right m-anchor-middle-center anchor"></div>
+    <div class="c-pos m-absolute m-top-0 m-left-0 m-offset-50-50 anchor"></div>
+    <div class="c-pos m-absolute m-top-0 m-left-50 m-offset-50-50 anchor"></div>
+    <div class="c-pos m-absolute m-top-0 m-left-100 m-offset-50-50 anchor"></div>
+    <div class="c-pos m-absolute m-top-50 m-left-0 m-offset-50-50 anchor"></div>
+    <div class="c-pos m-absolute m-top-50 m-left-50 m-offset-50-50 anchor"></div>
+    <div class="c-pos m-absolute m-top-50 m-left-100 m-offset-50-50 anchor"></div>
+    <div class="c-pos m-absolute m-top-100 m-left-0 m-offset-50-50 anchor"></div>
+    <div class="c-pos m-absolute m-top-100 m-left-50 m-offset-50-50 anchor"></div>
+    <div class="c-pos m-absolute m-top-100 m-left-100 m-offset-50-50 anchor"></div>
 </div>
 <!-- DEMO UNIQUEMENT -->
 <style>
@@ -87,18 +80,22 @@ unlisted: true
     }
     label {
         display: inline-flex;
-        width: 30%;
+        width: 14%;
         padding: var(--ita-spacing-1);
-        font-size: var(--ita-font-size-3);
+        font-size: var(--ita-font-size-2);
         border-top: var(--ita-border-4);
+        cursor: pointer;
         gap: 1em;
+        line-height: 1.5em;
+    }
+    label[for*="offset"] {
+        width: 20%;
     }
     label::before {
-        content: "[ ]";
-        white-space: nowrap;
+        content: "[_]";
     }
     input:checked + label::before {
-        content: "[x]";
+        content: "[X]";
     }
     #conteneur {
         background-color: var(--ita-color-primary-800);
@@ -141,60 +138,49 @@ unlisted: true
         height: 100%;
         border-left: 1px dashed var(--ita-color-primary-500);
     }
-    #trbl-top-center:checked ~ #conteneur > #element {
+    #trbl-top-0:checked ~ #conteneur > #element {
         top: 0%;
-        left: 50%;
     }
-    #trbl-top-right:checked ~ #conteneur > #element {
-        top: 0%;
-        left: 100%;
-    }
-    #trbl-middle-left:checked ~ #conteneur > #element {
+    #trbl-top-50:checked ~ #conteneur > #element {
         top: 50%;
+    }
+    #trbl-top-100:checked ~ #conteneur > #element {
+        top: 100%;
+    }
+    #trbl-right-0:checked ~ #conteneur > #element {
+        right: 0%;
+    }
+    #trbl-right-50:checked ~ #conteneur > #element {
+        right: 50%;
+    }
+    #trbl-right-100:checked ~ #conteneur > #element {
+        right: 100%;
+    }
+    #trbl-bottom-0:checked ~ #conteneur > #element {
+        bottom: 0%;
+    }
+    #trbl-bottom-50:checked ~ #conteneur > #element {
+        bottom: 50%;
+    }
+    #trbl-bottom-100:checked ~ #conteneur > #element {
+        bottom: 100%;
+    }
+    #trbl-left-0:checked ~ #conteneur > #element {
         left: 0%;
     }
-    #trbl-middle-center:checked ~ #conteneur > #element {
-        top: 50%;
+    #trbl-left-50:checked ~ #conteneur > #element {
         left: 50%;
     }
-    #trbl-middle-right:checked ~ #conteneur > #element {
-        top: 50%;
+    #trbl-left-100:checked ~ #conteneur > #element {
         left: 100%;
     }
-    #trbl-bottom-left:checked ~ #conteneur > #element {
-        top: 100%;
-        left: 0%;
+    #offset-50-50:checked ~ #conteneur > #element {
+        transform: translateX(-50%) translateY(-50%);
     }
-    #trbl-bottom-center:checked ~ #conteneur > #element {
-        top: 100%;
-        left: 50%;
+    #offset-0-50:checked ~ #conteneur > #element {
+        transform: translateX(0%) translateY(-50%);
     }
-    #trbl-bottom-right:checked ~ #conteneur > #element {
-        top: 100%;
-        left: 100%;
-    }
-    #anchor-top-center:checked ~ #conteneur > #element {
-        transform: translateX(-50%) translateY(0%)
-    }
-    #anchor-top-right:checked ~ #conteneur > #element {
-        transform: translateX(-100%) translateY(0%)
-    }
-    #anchor-middle-left:checked ~ #conteneur > #element {
-        transform: translateX(0%) translateY(-50%)
-    }
-    #anchor-middle-center:checked ~ #conteneur > #element {
-        transform: translateX(-50%) translateY(-50%)
-    }
-    #anchor-middle-right:checked ~ #conteneur > #element {
-        transform: translateX(-100%) translateY(-50%)
-    }
-    #anchor-bottom-left:checked ~ #conteneur > #element {
-        transform: translateX(0%) translateY(-100%)
-    }
-    #anchor-bottom-center:checked ~ #conteneur > #element {
-        transform: translateX(-50%) translateY(-100%)
-    }
-    #anchor-bottom-right:checked ~ #conteneur > #element {
-        transform: translateX(-100%) translateY(-100%)
+    #offset-50-0:checked ~ #conteneur > #element {
+        transform: translateX(-50%) translateY(0%);
     }
 </style>

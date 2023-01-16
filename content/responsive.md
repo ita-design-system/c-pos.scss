@@ -29,16 +29,21 @@ a le même effet que les classes CSS
 
 ```html
 <!-- Avec des classes responsives -->
-<div class="c-pos m-main-end--xs">
-    <div>Je m'aligne au bout de l'axe "main"<br> sur la taille d'écran xs<br> via des classes CSS</div>
+<div class="c-pos m-fixed--xs m-top-50--xs m-left-0--xs">
+    Je passe en position: fixed<br> top: 50%<br> left: 0%<br> sur la taille d'écran xs<br> via des classes CSS
 </div>
 <!-- Avec l'attribut responsive - 1 taille d'écran -->
-<div class="c-pos" m-main-end="xs">
-    <div>Je m'aligne au bout de l'axe "main"<br> sur la taille d'écran xs<br> via l'attribut responsive</div>
+<div class="c-pos" 
+    m-fixed="xs" 
+    m-top-0="xs" 
+    m-right-0="xs">
+    Je passe en position: fixed<br> top: 0%<br> right: 0%<br> sur la taille d'écran xs<br> via l'attribut responsive
 </div>
 <!-- Avec l'attribut responsive - multiples tailles d'écrans -->
-<div class="c-pos" m-main-end="xs,sm">
-    <div>Je m'aligne au bout de l'axe "main"<br> sur les tailles d'écran xs et sm<br> via l'attribut responsive</div>
+<div class="c-pos m-fixed m-bottom-0" 
+    m-right-0="xs,sm"
+    m-left-0="md,lg,xl">
+    Je passe à droite<br> sur les tailles d'écran xs et sm<br> via l'attribut responsive
 </div>
 <!-- DEMO UNIQUEMENT -->
 <style>
@@ -49,22 +54,13 @@ a le même effet que les classes CSS
         font-family: var(--ita-font-family-mono);
         font-size: 1rem;
         line-height: 1.5rem;
-        padding-bottom: 50vh;
+        height: 100vh;
     }
-    .c-flex {
-        background-color: var(--ita-color-primary-800);
-    }
-    .c-flex > * {
+    .c-pos {
         background-color: var(--ita-color-primary-500);
-        color: var(--ita-color-primary-900);
-        border: var(--ita-border-6);
+        color: var(--ita-color-neutral-900);
         padding: var(--ita-spacing-4);
-    }
-    .c-flex + .c-flex {
-        margin-top: var(--ita-spacing-4);
-    }
-    .c-flex + h2 {
-        margin-top: var(--ita-spacing-12);
+        border: var(--ita-border-5);
     }
 </style>
 ```
