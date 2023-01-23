@@ -2,7 +2,19 @@
 
 [Démo et documentation](https://ita-design-system.github.io/c-pos.scss/)
 
-Composant générique CSS c-pos dédié aux positionnements. 
+Composant générique CSS dédié aux positionnements. 
+
+## Scope
+
+Liste des propriétés CSS utilisées par le composant
+
+* [position](https://developer.mozilla.org/fr/docs/Web/CSS/position)
+* [top](https://developer.mozilla.org/fr/docs/Web/CSS/top)
+* [right](https://developer.mozilla.org/fr/docs/Web/CSS/right)
+* [bottom](https://developer.mozilla.org/fr/docs/Web/CSS/bottom)
+* [left](https://developer.mozilla.org/fr/docs/Web/CSS/left)
+* [transform](https://developer.mozilla.org/fr/docs/Web/CSS/transform)
+* [z-index](https://developer.mozilla.org/fr/docs/Web/CSS/z-index)
 
 ## Typologie d'un composant générique
 
