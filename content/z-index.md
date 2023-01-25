@@ -16,8 +16,8 @@ order: 200
 <style>
     body {
         padding: var(--ita-spacing-4);
-        background-color: var(--ita-color-primary-900);
-        color: var(--ita-color-primary-200);
+        background-color: var(--ita-color-primary-100);
+        color: var(--ita-color-primary-800);
         font-family: var(--ita-font-family-mono);
         font-size: 1rem;
         line-height: 1.5rem;
@@ -25,7 +25,7 @@ order: 200
     }
     .c-pos.m-absolute {
         background-color: var(--ita-color-primary-100);
-        color: var(--ita-color-primary-900);
+        color: var(--ita-color-neutral-100);
         border: var(--ita-border-6);
         padding: var(--ita-spacing-4);
         width: 400px;
@@ -44,7 +44,7 @@ order: 200
     .c-pos.m-absolute:nth-child(3) {
         top: 30%;
         left: 30%;
-        background-color: var(--ita-color-primary-300);
+        background-color: var(--ita-color-primary-400);
     }
     .c-pos.m-absolute:nth-child(4) {
         top: 45%;
@@ -54,17 +54,17 @@ order: 200
     .c-pos.m-absolute:nth-child(5) {
         top: 60%;
         left: 60%;
-        background-color: var(--ita-color-primary-500);
+        background-color: var(--ita-color-primary-600);
     }
     .c-pos.m-absolute:nth-child(6) {
         top: 75%;
         left: 75%;
-        background-color: var(--ita-color-primary-600);
+        background-color: var(--ita-color-primary-700);
     }
     .c-pos.m-absolute:nth-child(7) {
         top: 90%;
         left: 90%;
-        background-color: var(--ita-color-primary-700);
+        background-color: var(--ita-color-primary-800);
     }
 </style>
 ```
