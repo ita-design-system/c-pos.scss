@@ -2,7 +2,7 @@
 title: Positions
 description: Modifieurs c-pos dédiés aux positions
 layout: libdoc/page-split
-order: 300
+order: 130
 ---
 ```html
 <div class="c-pos m-absolute m-left-0 m-bottom-0">m-absolute <br>position: absolute<br>Je suis sur un nouveau calque</div>

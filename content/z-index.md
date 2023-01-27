@@ -2,7 +2,7 @@
 title: z-index
 description: Modifieurs c-pos dédiés au z-index
 layout: libdoc/page-split
-order: 200
+order: 140
 ---
 ```html
 <div class="c-pos m-absolute m-z--1">m-z--1 <br>z-index: -1</div>
