@@ -47,7 +47,7 @@ metadata:
     color: '#FFFFFF'
     # Open Graph image file. Can be either relative URL from site root, absolute URL starting with 'http'. Default is LibDoc's splash screen
     #image: /img/html5_la_casa_de_papel.webp
-    image: https://og-image.vercel.app/**VEH%20Services**%20UI%20Framework.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-color-logo.svg
+    image: https://og-image.vercel.app/c-pos%20**ITADS**.png?theme=light&md=1&fontSize=140px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-color-logo.svg
 
 # Sidebar 
 sidebar:
