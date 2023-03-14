@@ -8,13 +8,20 @@ Composant générique CSS dédié aux positionnements.
 
 Liste des propriétés CSS utilisées par le composant
 
-* [position](https://developer.mozilla.org/fr/docs/Web/CSS/position)
-* [top](https://developer.mozilla.org/fr/docs/Web/CSS/top)
-* [right](https://developer.mozilla.org/fr/docs/Web/CSS/right)
-* [bottom](https://developer.mozilla.org/fr/docs/Web/CSS/bottom)
-* [left](https://developer.mozilla.org/fr/docs/Web/CSS/left)
-* [transform](https://developer.mozilla.org/fr/docs/Web/CSS/transform)
-* [z-index](https://developer.mozilla.org/fr/docs/Web/CSS/z-index)
+* bottom
+* left
+* perspective
+* perspective-origin
+* position
+* right
+* top
+* scale
+* transform
+* transform-box
+* transform-origin
+* transform-style
+* translate
+* z-index
 
 ## Typologie d'un composant générique
 
